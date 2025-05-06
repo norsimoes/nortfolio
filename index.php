@@ -34,8 +34,7 @@ require_once($configSettings);
  * Start output buffer
  * ----------------------------------------------------------------------------
  */
-// ob_start('minify');
-ob_start();
+ob_start('minify');
 
 /* ----------------------------------------------------------------------------
  * Application core

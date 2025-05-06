@@ -1,2 +1,4 @@
 .vscode
+.htaccess
+config.php
 connect.php

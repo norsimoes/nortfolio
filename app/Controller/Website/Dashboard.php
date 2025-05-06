@@ -1,6 +1,6 @@
 <?php
 
-// this is a comment in test branch.s
+// this is a comment in test branch.
 
 namespace Controller\Website;
 

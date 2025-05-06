@@ -313,7 +313,7 @@ function addLine($class, $indent, $content): string
     </div>
 
     <?= addLine('', 0, '/**') ?>
-    <?= addLine('', 0, ' * <span class="prop-name">NORBERTO SIMÕES...</span>') ?>
+    <?= addLine('', 0, ' * <span class="prop-name">NORBERTO SIMÕES</span>') ?>
     <?= addLine('', 0, ' *') ?>
     <?= addLine('', 0, ' * ' . $i18n['Vitae'][1]) ?>
     <?= addLine('', 0, ' * ' . $i18n['Vitae'][2]) ?>

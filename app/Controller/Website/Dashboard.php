@@ -1,7 +1,5 @@
 <?php
 
-// comment for git testing purposes
-
 namespace Controller\Website;
 
 use Lib\App;

@@ -1,0 +1,366 @@
+/* ****************************************************************************
+ * Darkwave theme
+ *
+ * Created by Nor in 2022-03-14
+ * ****************************************************************************
+ */
+#website-wrapper {
+    display: flex;
+    height: calc(100% - 50px);
+    padding: 50px 0 0 0;
+}
+
+/* ----------------------------------------------------------------------------
+ * Colors
+ * ----------------------------------------------------------------------------
+ */
+body {
+    color: #ccc;
+}
+.line-number {
+    color: #4b4b61;
+    background: #23232b;
+}
+.line-text {
+    color: #787891;
+    background: #2a2a34;
+}
+.cv-line:hover > .line-number {
+    background: #2a2a34;
+}
+.cv-line:hover > .line-text {
+    background: #31313d;
+}
+
+/*
+ * Properties
+ */
+.prop-name {
+    color: #fff;
+}
+.prop-cv {
+    color: #a3a1de;
+}
+.prop-text {
+    color: #ccc;
+}
+.prop-class {
+    color: #70b5f9;
+}
+.prop-class2 {
+    color: #9945a5;
+}
+.prop-method {
+    color: #da6ec6;
+}
+.prop-arg {
+    color: #a17fe1;
+}
+.prop-string {
+    color: #5880a8;
+}
+
+/* ----------------------------------------------------------------------------
+ * Info pane
+ * ----------------------------------------------------------------------------
+ */
+#cv-info {
+    background: #1e1f27;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+}
+
+#cv-info-scroll {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+	scrollbar-width: none !important;
+}
+#cv-info-scroll::-webkit-scrollbar {
+	display: none !important;
+}
+
+.cv-url {
+    color: #70b5f9;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.cv-url:hover {
+    color: var(--white);
+    text-decoration: none;
+    cursor: url('../Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+
+/* ----------------------------------------------------------------------------
+ * Override tree
+ * ----------------------------------------------------------------------------
+ */
+.skill-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-wrapper div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+.tree-icon {
+    width: 22px;
+    height: 22px;
+    background: #212128;
+    margin-right: 8px;
+}
+
+/*
+ * Progress bar
+ */
+.bar-wrapper {
+    width: 100%;
+    height: 5px;
+    background: #343a40;
+    margin-right: 10px;
+    position: relative;
+    opacity: 0;
+}
+.bar-fg {
+    width: 0;
+    height: 100%;
+    background: #6184d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ----------------------------------------------------------------------------
+ * Vitae pane
+ * ----------------------------------------------------------------------------
+ */
+#cv-vitae {
+    margin: 0 0 0 auto;
+    width: 80%;
+}
+
+#cv-header {
+    color: #9494c4;
+    background: #1f1f25;
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    display: none;
+}
+#cv-header span {
+    margin-right: 12px;
+}
+
+.cv-line {
+    display: flex;
+    min-height: 22px;
+}
+.line-number {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    min-height: 22px;
+    width: 35px !important;
+    line-height: 22px;
+    padding-right: 5px;
+    transition: 0.2s;
+}
+.line-text {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    height: 100%;
+    flex: 1;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+/*
+ * Indentation
+ */
+.i-1 {
+    height: 100%;
+    padding-left: 50px;
+    background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat;
+    background-size: 1px 100%;
+}
+.i-2 {
+    height: 100%;
+    padding-left: 100px;
+    background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 55px no-repeat;
+    background-size: 1px 100%;
+}
+.i-3 {
+    height: 100%;
+    padding-left: 150px;
+    background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 55px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 105px no-repeat;
+    background-size: 1px 100%;
+}
+
+/* ----------------------------------------------------------------------------
+ * Media query
+ * ----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 1024px) {
+
+    #header-tooltip-wrapper,
+    .user-name {
+        display: none;
+    }
+
+    #website-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    #cv-info {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 50px;
+    }
+    #cv-info-scroll {
+        height: 100%;
+        overflow-y: auto;
+        scrollbar-width: none !important;
+    }
+    #cv-vitae {
+        position: relative;
+        margin: 50px 0 auto 0;
+        width: 100%;
+    }
+    #cv-header {
+        display: block;
+    }
+
+    .i-1 {
+        height: 100%;
+        padding-left: 25px;
+        background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat;
+        background-size: 1px 100%;
+    }
+    .i-2 {
+        height: 100%;
+        padding-left: 50px;
+        background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 30px no-repeat;
+        background-size: 1px 100%;
+    }
+    .i-3 {
+        height: 100%;
+        padding-left: 75px;
+        background: linear-gradient(#3f3f4d, #3f3f4d) 5px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 30px no-repeat, linear-gradient(#3f3f4d, #3f3f4d) 55px no-repeat;
+        background-size: 1px 100%;
+    }
+}
+
+/* ----------------------------------------------------------------------------
+ * Tree
+ * ----------------------------------------------------------------------------
+ */
+.tree ul, .tree li {
+    list-style-type: none;
+    box-sizing: border-box !important;
+}
+
+.tree ul.l-1 {
+    margin: 0;
+    padding: 0;
+}
+.tree ul.l-1 > li > span {
+    color: #a3a1de;
+    background: #23232b;
+    padding: 10px;
+    display: flex;
+    text-transform: uppercase;
+}
+.tree ul.l-1 > li > span.caret:before {
+    margin-right: 12px;
+}
+.tree ul.l-1 > li > span:hover {
+    color: var(--white);
+    background: #2a2a34;
+}
+
+.tree ul.l-2 {
+    padding-left: 20px;
+    line-height: 28px;
+}
+.tree ul.l-2 > li > span {
+    color: #a17fe1;
+    display: flex;
+    padding: 2px 0;
+    text-transform: uppercase;
+    box-shadow: -20px 0 0 #1e1f27;
+}
+.tree ul.l-2 > li > span.caret:before {
+    margin-right: 12px;
+}
+.tree ul.l-2 > li > span:hover,
+.tree ul.l-2 > li > span:active {
+    color: var(--white);
+    background: rgba(255,255,255,.045);
+    box-shadow: -20px 0 0 rgba(255,255,255,.045) !important;
+}
+
+.tree ul.l-3 {
+    color: #ccc;
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    padding-left: 35px;
+    background: linear-gradient(#3f3f4d, #3f3f4d) 23px no-repeat;
+    background-size: 1px 100%;
+}
+.tree ul.l-3 > li {
+    transition: 0.2s;
+    box-shadow: -50px 0 0 rgba(255,255,255,0);
+}
+.tree ul.l-3 > li:hover {
+    background: rgba(255,255,255,.045);
+    box-shadow: -50px 0 0 rgba(255,255,255,.045) !important;
+}
+
+/*
+ * Caret
+ */
+.caret {
+    cursor: url('../Img/Cursor/Pointer.svg') 0 0, auto !important;
+    user-select: none;
+    transition: 0.2s;
+}
+.caret:hover {
+    color: var(--white);
+}
+.caret:before {
+    font-family: "Nortfolio";
+    content: "\e90d";
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--gray-light);
+    display: inline-block;
+    transition: 0.3s;
+    margin-left: -2px;
+}
+.caret-down:before {
+    transform: rotate(90deg);
+}
+
+/*
+ * Visibility
+ */
+.nested {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0, 1.05, 0, 1);
+}
+
+.active {
+    max-height: 2000px;
+    transition: 1.5s;
+}

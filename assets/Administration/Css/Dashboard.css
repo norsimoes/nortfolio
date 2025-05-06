@@ -1,0 +1,56 @@
+/* ----------------------------------------------------------------------------
+ * Dashboard
+ * ----------------------------------------------------------------------------
+ */
+.dash-href {
+    text-decoration: none !important;
+}
+
+.dash-card {
+    display: flex;
+    height: 100%;
+}
+
+.dash-card:hover .dash-icon {
+    animation: shakeIcon 2.5s linear infinite;
+}
+
+.dash-card .dash-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    background: #2a2a31;
+    transition: 300ms;
+}
+
+.dash-card .dash-card-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    background: #303038;
+    transition: 300ms;
+}
+
+.dash-card:hover .dash-card-left {
+    background: #3a265a;
+}
+.dash-card:hover .dash-card-right {
+    background: #493271;
+}
+
+.dash-card .dash-icon {
+    font-size: 2rem;
+    margin: 10px;
+    color: #a782dd;
+}
+.dash-card .dash-counter {
+    margin: 10px;
+    color: #a782dd;
+    font-weight: bold;
+}
+.dash-card .card-desc {
+    color: #a782dd;
+}

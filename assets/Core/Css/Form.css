@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------------
+ * Form
+ * ----------------------------------------------------------------------------
+ */
+
+/*
+ * File input
+ */
+input.j-file-input {
+    cursor: pointer;
+}
+label.custom-file-label {
+    border: 1px solid var(--form-border) !important;
+}
+input.j-file-input + label {
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+input.j-file-input + label::after {
+	font-family: "Font Awesome 5 Free" !important;
+    content: "\f07c" !important;
+    font-weight: 900 !important;
+    transition: 0.2s;
+}
+input.j-file-input:hover + label::after {
+    filter: brightness(0.95);
+    color: var(--gray-dark);
+}

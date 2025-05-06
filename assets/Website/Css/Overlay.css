@@ -1,0 +1,273 @@
+/* ----------------------------------------------------------------------------
+ * QRCode
+ * ----------------------------------------------------------------------------
+ */
+#overlay-qrcode > .overlay-title {
+    background: #07202c;
+}
+#overlay-qrcode > .overlay-content {
+    background: #0d2731;
+}
+
+.qrcode {
+    max-width: 400px;
+    width: 45vmin;
+    height: auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * Download
+ * ----------------------------------------------------------------------------
+ */
+#overlay-download > .overlay-title {
+    background: #332800;
+}
+#overlay-download > .overlay-content {
+    background: #3b2e03;
+}
+
+.dl-item:link, .dl-item:visited {
+    color: #80630d;
+    text-decoration: none;
+    padding-bottom: 10px;
+    background: linear-gradient(#80630d, #80630d) var(--p, 0) 100% / var(--d, 0) 4px no-repeat;
+    transition: 0.3s, background-position 0s 0.3s;
+}
+.dl-item:hover {
+    --d: 100%;
+    --p: 100%;
+    color: #b59537;
+    cursor: url('../Img/Cursor/Pointer.svg') 0 0, auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * Language
+ * ----------------------------------------------------------------------------
+ */
+#overlay-language > .overlay-title {
+    background: #2c0721;
+}
+#overlay-language > .overlay-content {
+    background: #310d27;
+}
+
+.lang-item:link, .lang-item:visited {
+    color: #8e319b;
+    text-decoration: none;
+    padding-bottom: 10px;
+    background: linear-gradient(#692173, #692173) var(--p, 0) 100% / var(--d, 0) 4px no-repeat;
+    transition: 0.3s, background-position 0s 0.3s;
+}
+.lang-item:hover {
+    --d: 100%;
+    --p: 100%;
+    color: #bf56ce;
+    cursor: url('../Img/Cursor/Pointer.svg') 0 0, auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * User
+ * ----------------------------------------------------------------------------
+ */
+#overlay-user > .overlay-title {
+    background: #1c0a29;
+}
+#overlay-user > .overlay-content {
+    background: #21102e;
+}
+
+.user-item:link, .user-item:visited {
+    color: #613e9d;
+    text-decoration: none;
+    padding-bottom: 10px;
+    background: linear-gradient(#613e9d, #613e9d) var(--p, 0) 100% / var(--d, 0) 4px no-repeat;
+    transition: 0.3s, background-position 0s 0.3s;
+}
+.user-item:hover {
+    --d: 100%;
+    --p: 100%;
+    color: #a068fd;
+    cursor: url('../Img/Cursor/Pointer.svg') 0 0, auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * Overlay
+ * ----------------------------------------------------------------------------
+ */
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 20;
+}
+.overlay.active {
+    visibility: visible;
+}
+
+.overlay-title, .overlay-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-title {
+    background: #15151e;
+    transform: translate3d(0, 100%, 0);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.overlay-content {
+    background: #1a1a23;
+    transform: translate3d(0, -100%, 0);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.overlay-content .link-menu {
+    text-align: center;
+}
+
+.overlay.active > .overlay-title,
+.overlay.active > .overlay-content {
+    transform: translate3d(0, 0, 0);
+}
+
+/*
+ * Close button
+ */
+.overlay-close {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    opacity: 0.5;
+    z-index: 25;
+    display: none;
+}
+.overlay-close:before {
+    font-family: "Nortfolio";
+    content: "\e90e";
+    font-weight: 900;
+    font-size: 6vmin;
+}
+
+/*
+ * Item load
+ */
+.overlay .item-load {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.overlay.active .item-load {
+    opacity: 1;
+}
+
+.form-wrapper div:nth-of-type(1) {
+    transition-delay: .3s;
+}
+.form-wrapper div:nth-of-type(2) {
+    transition-delay: .5s;
+}
+.form-wrapper div:nth-of-type(3) {
+    transition-delay: .7s;
+}
+.form-wrapper div:nth-of-type(4) {
+    transition-delay: .9s;
+}
+
+/*
+ * Title
+ */
+.overlay-title div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-title span {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 0.15em #fff;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    animation: shakeTitle 2.5s linear infinite;
+}
+
+@keyframes shakeTitle {
+    5%, 15%, 35%, 55%, 65%, 75%, 95% {
+        filter: blur(0.018em);
+        transform: translateY(0.018em) rotate(0deg);
+    }
+    10%, 30%, 40%, 70%, 80%, 90% {
+        filter: blur(0.01em);
+        transform: translateY(-0.018em) rotate(0deg);
+    }
+    20%, 60% {
+        filter: blur(0em);
+        transform: translate(-0.018em, 0.018em) rotate(0deg);
+    }
+    45%, 85% {
+        filter: blur(0.03em);
+        transform: translate(0.018em, -0.018em) rotate(0deg);
+    }
+    25%, 50% {
+        filter: blur(0.007em);
+        transform: translate(0) rotate(0.5deg);
+    }
+    100% {
+        filter: blur(0em);
+        transform: translate(0) rotate(-0.8deg);
+    }
+}
+
+/* ----------------------------------------------------------------------------
+ * Media query
+ * ----------------------------------------------------------------------------
+ */
+@media (orientation: portrait) {
+    .overlay {
+        flex-direction: column;
+    }
+    .overlay-title {
+        width: 100%;
+        height: 25%;
+    }
+    .overlay-content {
+        width: 100%;
+        height: 75%;
+    }
+    .overlay-title {
+        transform: translate3d(100%, 0, 0);
+    }
+    .overlay-content {
+        transform: translate3d(-100%, 0, 0);
+    }
+    .overlay-title span {
+        font-size: 15vw;
+    }
+    .overlay-content .link-menu {
+        font-size: 9vw;
+        line-height: 14vw;
+    }
+}
+@media (orientation: landscape) {
+    .overlay-title span {
+        font-size: 8vw;
+    }
+    .overlay-content .link-menu {
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .overlay-close {
+        display: block;
+    }
+}

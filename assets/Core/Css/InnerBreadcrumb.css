@@ -1,0 +1,19 @@
+/*
+ * Inner breadcrumbs
+ */
+.inner-breadcrumb {
+    display: flex;
+    align-items: center;
+	background: transparent;
+    text-transform: lowercase;
+}
+
+.inner-breadcrumb a {
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto;
+}
+
+.inner-breadcrumb div {
+    margin-right: 7px; 
+}

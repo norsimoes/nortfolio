@@ -1,0 +1,18 @@
+@import url("Template.css");
+@import url("OverrideBootstrap.css");
+@import url("Dashboard.css");
+@import url("Button.css");
+@import url("FileImage.css");
+
+/* ----------------------------------------------------------------------------
+ * Layout
+ * ----------------------------------------------------------------------------
+ */
+.dt-icon {
+    width: 24px;
+    height: 24px;
+    background: #212128;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}

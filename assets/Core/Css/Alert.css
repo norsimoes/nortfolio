@@ -1,0 +1,66 @@
+/*
+ * Alerts
+ */
+#admin-alerts {
+	position: fixed;
+	z-index: 20000;
+}
+
+#admin-alerts > div {
+	padding: 15px 20px;
+	position: relative;
+	left: 0;
+	opacity: 1;
+	transition: all .75s ease;
+	display: table;
+	color: var(--white);
+	border: none;
+}
+
+#admin-alerts > div.go-away {
+	left: -100%;
+	opacity: 0;
+	transition: all .75s ease;
+}
+
+#admin-alerts > div:last-child {
+	margin-bottom: 0;
+}
+
+#admin-alerts > div > button {
+	display: inline-block;
+	vertical-align: middle;
+	background: transparent;
+	color: var(--white);
+	border: none;
+}
+
+/*
+ * Position
+ */
+#admin-alerts[data-position^="bottom-"] {
+    bottom: 30px;
+}
+
+#admin-alerts[data-position$="-left"] {
+    left: 30px;
+}
+
+/*
+ * Colors
+ */
+#admin-alerts .alert-secondary {
+	background: #464a4e;
+}
+
+#admin-alerts .alert-success {
+	background: #3f5b05;
+}
+
+#admin-alerts .alert-error {
+	background: #7b0000;
+}
+
+#admin-alerts .alert-info {
+	background: #0c5460;
+}

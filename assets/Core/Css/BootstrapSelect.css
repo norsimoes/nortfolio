@@ -1,0 +1,60 @@
+/* ----------------------------------------------------------------------------
+ * BootstrapSelect
+ * ----------------------------------------------------------------------------
+ */
+.bootstrap-select, .bootstrap-select * {
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+
+/*
+ * Select
+ */
+.bootstrap-select > .dropdown-toggle {
+    background: #212128;
+    color: #ccc !important;
+    border: none;
+}
+
+.bootstrap-select > .dropdown-toggle:after {
+    border-top: .35em solid;
+    border-right: .35em solid transparent;
+    border-left: .35em solid transparent;
+    margin-top: 1px;
+    color: darkgray;
+}
+
+/*
+ * Menu
+ */
+.bootstrap-select > .dropdown-menu, 
+.bootstrap-select > .dropdown-menu .inner, 
+.bootstrap-select > .dropdown-menu.inner,
+.bootstrap-select .no-results {
+    background: #181820;
+    color: #ccc;
+}
+
+/*
+ * Search
+ */
+.bootstrap-select > .dropdown-menu .bs-searchbox {
+    margin-bottom: 7px;
+} 
+
+/*
+ * Items
+ */
+.bootstrap-select .dropdown-item {
+    background: #181820;
+    color: #bbb;
+}
+
+.bootstrap-select .dropdown-item:hover {
+    background: #27272f;
+    color: #eee;
+}
+
+.bootstrap-select .dropdown-item.active {
+    background: #007bff;
+    color: #eee;
+}

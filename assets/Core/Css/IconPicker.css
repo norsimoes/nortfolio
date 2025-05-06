@@ -1,0 +1,37 @@
+/* ----------------------------------------------------------------------------
+ * IconPicker
+ * ----------------------------------------------------------------------------
+ */
+/* .bootstrap-select, .bootstrap-select * {
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+} */
+
+.iconpicker-popover.popover,
+.iconpicker-popover .popover-title,
+.iconpicker .iconpicker-items {
+    background: #212128 !important;
+}
+
+.iconpicker-popover .arrow:after {
+    border-top-color: #212128 !important;
+}
+
+
+.iconpicker-popover .iconpicker-search  {
+    background: #15151e !important;
+}
+
+.iconpicker-popover .popover-title {
+    border-bottom: 1px solid #15151e !important;
+}
+
+.iconpicker-popover .iconpicker-item {
+    margin: 0 2px 2px 0;
+    padding: 4px;
+    box-shadow: none !important;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+
+.iconpicker-popover .iconpicker-item:hover:not(.iconpicker-selected) {
+    background: #15151e;
+}

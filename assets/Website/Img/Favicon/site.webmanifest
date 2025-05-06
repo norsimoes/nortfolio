@@ -1,0 +1,21 @@
+{
+  "name": "Nortfolio",
+  "short_name": "Nortfolio",
+  "icons": [
+    {
+      "src": "/<?= APP_URL_ASSETS ?>Website/Img/Favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/<?= APP_URL_ASSETS ?>Website/Img/Favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#2e3436",
+  "background_color": "#2e3436",
+  "display": "standalone"
+}

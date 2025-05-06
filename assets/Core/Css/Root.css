@@ -1,0 +1,57 @@
+:root {
+
+    /* App */
+    --body: #f6f9fa;
+    --text: #657786;
+    --link: #0056b3;
+    --list: #495057;
+    --hover: #ecf0f1;
+    --hover-min: #f8f9fa;
+    --label: #7a8994;
+    --stripe: #fafbfb;
+    --border: rgba(0,0,0,.1);
+    --form-border: #ced4da;
+
+    /* Bootstrap */
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ff6600;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --muted: #9ea8b1;
+
+    /* User colors */
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #3366cc;
+    --blue-dark: #113f9c;
+    --blue-light: #6699ff;
+    --indigo: #6610f2;
+    --purple: #a26cbb;
+    --pink: #d16095;
+    --red: #cc0000;
+    --orange: #ff6600;
+    --yellow: #ffc107;
+    --green: #669900;
+    --teal: #2fc5ac;
+    --cyan: #17a2b8;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --gray-light: #a7b1bb;
+    --gray-lighter: #d1dbe6;
+    --gray-min: #edf0f1;
+
+    /* Breakpoints */
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+.text-purple {
+    color: #613e9d;
+}

@@ -1,0 +1,34 @@
+/*
+ * Toggle switch
+ */
+.j-toggle-switch,
+.j-toggle-available {
+    line-height: 0 !important;
+}
+.j-toggle-disabled {
+    line-height: 0 !important;
+    cursor: default !important;
+}
+
+.toggle-on:before, .toggle-off:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f205";
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+.toggle-on:before {
+    color: var(--primary);
+}
+.toggle-off:before {
+    color: var(--secondary);
+    transform: rotate(180deg);
+    margin-top: 1px;
+}
+
+.toggle-on.toggle-disabled:before {
+    color: var(--gray-light);
+}
+.toggle-off.toggle-disabled:before {
+    color: var(--gray-lighter);
+}

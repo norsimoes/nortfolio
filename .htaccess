@@ -1,0 +1,24 @@
+# Authentication
+# AuthType Basic
+# AuthName "Unlock required"
+# AuthUserFile /var/www/html/cv/.htpasswd
+# require valid-user
+
+# Disable listings in all directories
+Options -Indexes
+
+# In production, first the index.php file
+DirectoryIndex index.php index.html
+
+# Map every call to the index.php file
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^ ./index.php [L]
+</IfModule>
+
+# Rewrite module not available
+<IfModule !mod_rewrite.c>
+	DirectoryIndex index.html
+</IfModule>

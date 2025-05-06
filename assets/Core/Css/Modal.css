@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------------------
+ * Modal
+ * ----------------------------------------------------------------------------
+ */
+.modal form {
+    width: 500px;
+    max-width: 95% !important;
+}
+.modal-content {
+    background: #2a2a31 !important;
+}
+.modal-header {
+    border-bottom: none;
+    padding: 0.6rem 1rem;
+}
+.modal-footer {
+    border-top: none;
+}
+
+/*
+ * Title
+ */
+.modal-title {
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+#j-template-title.modal-title {
+    min-height: 20px;
+}
+
+/*
+ * Close button
+ */
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 1.2rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    transition: 0.3s;
+    color: #aaa;
+}
+.modal-close:hover {
+    color: #fff;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto;
+}

@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 12px;
+}
+.d-none {
+    display: block;
+}
+
+#website-header {
+    display: none;
+}
+#website-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+}
+
+#cv-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#cv-info h1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+#cv-info h2 {
+    font-size: 14px;
+}
+#cv-info h3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+#cv-info-scroll {
+    display: none;
+}
+
+#cv-vitae {
+    position: relative;
+    margin: 20px 0 auto 0;
+    width: 100%;
+}
+#cv-vitae h1,
+#cv-vitae h2,
+#cv-vitae h3 {
+    display: none;
+}
+
+.overlay, #cv-header {
+    display: none;
+}
+
+.cv-line {
+    display: flex;
+    min-height: 18px;
+}
+.line-number {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    min-height: 18px;
+    width: 20px !important;
+    line-height: 18px;
+    padding-right: 5px;
+    transition: 0.2s;
+}
+.line-text {
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+    height: 100%;
+    flex: 1;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+.i-1 {
+    height: 100%;
+    padding-left: 25px;
+}
+.i-2 {
+    height: 100%;
+    padding-left: 50px;
+}
+.i-3 {
+    height: 100%;
+    padding-left: 75px;
+}

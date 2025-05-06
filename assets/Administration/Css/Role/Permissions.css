@@ -1,0 +1,95 @@
+/*
+ * Interface card
+ */
+.interface-card {
+    border-top: 0;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+
+/*
+ * Interface header
+ */
+.interface-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px 0 7px;
+    height: 40px;
+    border: 0;
+    background: var(--gray-min);
+    cursor: pointer;
+    transition: 0.2s;
+    background: #212128;
+}
+
+.interface-header:hover {
+    filter: brightness(0.96);
+}
+.interface-header:hover .interface-title {
+    color: var(--gray);
+}
+.interface-title {
+    flex-grow: 1;
+    color: var(--gray-light);
+}
+.interface-title:hover {
+    color: var(--white) !important;
+}
+
+/*
+ * Interface body
+ */
+.interface-body {
+    padding: 5px 10px;
+    padding-bottom: 1px;
+    border: 1px solid #212128;
+}
+.interface-body table {
+    color: var(--gray-light);
+}
+.interface-body thead tr td {
+    border-top: none;
+}
+
+.interface-body tbody {
+    border-top: none !important;
+}
+.interface-body table tbody tr:hover {
+    background: #24242b !important;
+}
+.interface-body tbody tr:hover > td {
+    color: var(--white) !important;
+}
+.interface-body table {
+    font-size: 95%;
+}
+
+/*
+ * Interface empty
+ */
+.interface-empty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 40px;
+    color: var(--white);
+    background: var(--info);
+    border-radius: 5px;
+}
+
+/*
+ * Check all
+ */
+.check-all div {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.interface-title[aria-expanded="true"] + .check-all div {
+    opacity: 1;
+    visibility: visible;
+}

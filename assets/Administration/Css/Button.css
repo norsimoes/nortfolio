@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------------------------
+ * Dashboard
+ * ----------------------------------------------------------------------------
+ */
+.header-button, .header-button:link, .header-button:visited {
+    background: #493271;
+    color: #b29cd7;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    font-size: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: none;
+    transition: 300ms;
+}
+.header-button:hover {
+    background: #613e9d;
+}
+
+.header-button-disabled, .header-button-disabled:hover {
+    background: #504b55;
+    color: #b29cd7;
+    text-decoration: none;
+}
+

@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------------------
+ * Image
+ * ----------------------------------------------------------------------------
+ */
+.file-image {
+    position: relative;
+    background: #212128;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+    overflow: hidden;
+}
+.file-image-input {
+    display: none;
+}
+.file-image > .file-image-preview {
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * Close button
+ */
+.file-image > .file-image-close {
+    position: absolute;
+    top: -7px;
+    right: -15px;
+    color: #212128;
+    opacity: 0;
+    transition: 0.2s;
+    font-size: 80%;
+}
+.file-image > .file-image-close * {
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+.file-image:hover > .file-image-close {
+    opacity: 1;
+}

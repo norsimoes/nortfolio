@@ -1,0 +1,41 @@
+/*
+ * Bootstrap select
+ */
+.dropdown-item {
+    color: #4d5a64;
+    transition: 0.3s;
+}
+.dropdown-item:hover {
+    color: var(--dark);
+    background: var(--hover);
+}
+.dropdown-item.selected.active:hover {
+    color: white;
+    background: #006ee4;
+}
+
+/*
+ * Filter select
+ */
+button.filter-select {
+    height: 32px;
+    font-size: 90%;
+}
+button.filter-select .filter-option .filter-option-inner {
+    margin-top: -2px;
+}
+button.filter-select ~ .dropdown-menu {
+    padding-top: 0;
+}
+button.filter-select ~ .dropdown-menu .bs-searchbox input {
+    padding: 5px;
+    height: 32px;
+}
+button.filter-select ~ .dropdown-menu .inner ul li .dropdown-item {
+    padding: 8px 10px;
+    font-size: 95%;
+}
+
+.filter-wrapper .dropdown {
+    width: auto !important;
+}

@@ -1,0 +1,159 @@
+/* ----------------------------------------------------------------------------
+ * Bootstrap override
+ * ----------------------------------------------------------------------------
+ */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------------------------
+ * Lists
+ * ----------------------------------------------------------------------------
+ */
+.list-group-item, .list-group-item-action {
+    background: #23212d;
+    color: #aaa !important;
+    width: 250px;
+}
+.list-group-item-action.active {
+    color: #fff !important;
+    background: #493271;
+    border: 1px solid #493271;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    background: #613e9d;
+    color: white;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto;
+}
+.list-group-item-action.active:focus, .list-group-item-action.active:hover {
+    background: #613e9d;
+    color: white;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * Forms
+ * ----------------------------------------------------------------------------
+ */
+input:not([type="checkbox"]), textarea, select {
+    font-family: 'Ubuntu Mono', monospace;
+    background: #212128 !important;
+    border: none !important;
+    color: #ccc !important;
+}
+input[type="checkbox"] {
+    background: #15151e;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    color: #786a95;
+}
+
+select {
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.5rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='darkgray' viewBox='6 6 12 12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position: right .5rem center !important;
+    background-size: 18px 12px !important;
+}
+
+.input-group-text {
+    background: #15151e;
+    color: #ccc;
+    border: none;
+}
+
+/* ----------------------------------------------------------------------------
+ * Cards
+ * ----------------------------------------------------------------------------
+ */
+.container-fluid {
+    padding: 0;
+}
+.card {
+    background: #2a2a31;
+    border: none;
+}
+.card-header {
+    background: none;
+    border: none;
+}
+.card-title {
+    color: white;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.card-desc {
+    color: #818181;
+}
+.card-footer {
+
+    padding: 1rem;
+    background: none;
+    border: none;
+}
+.card-subtitle {
+    color: var(--gray-light);
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* ----------------------------------------------------------------------------
+ * Buttons
+ * ----------------------------------------------------------------------------
+ */
+.btn {
+    color: #fff;
+}
+.card-footer .btn {
+    color: #fff !important;
+}
+a.btn {
+    color: #fff;
+}
+
+.icon-select .input-group-text {
+    padding: 10px .75rem;
+    color: #ccc;
+    background-color: #15151e;
+    border: none;
+}
+.icon-select * {
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+
+.dt-btn {
+    padding: 0;
+    margin-left: 7px;
+    transition: 0.2s;
+    cursor: url('../../Website/Img/Cursor/Pointer.svg') 0 0, auto !important;
+}
+.dt-btn:hover {
+    color: var(--white) !important;
+}
+
+/* ----------------------------------------------------------------------------
+ * Shadow
+ * ----------------------------------------------------------------------------
+ */
+:focus,
+:active,
+:checked,
+::after,
+::before {
+    outline: none !important;
+    box-shadow: none !important;
+}

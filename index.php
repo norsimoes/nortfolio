@@ -6,6 +6,7 @@
  */
 $appConfig = 'config.php';
 
+
 if (!is_file($appConfig)) die("App configuration not found!");
 
 require_once($appConfig);

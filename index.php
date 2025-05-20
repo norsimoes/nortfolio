@@ -16,6 +16,7 @@ require_once($appConfig);
  */
 $dbConfig = 'connect.php';
 
+
 if (!is_file($dbConfig)) die("Database configuration not found!");
 
 require_once($dbConfig);
